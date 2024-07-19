@@ -1,11 +1,3 @@
-if [ "$(command -v nvm)" = "" ]; then
-  if [ -s "$NVM_DIR/nvm.sh" ]; then
-    source "$NVM_DIR/nvm.sh"
-  else
-    echo "could not find nvm"
-  fi
-fi
-
 function nvm_auto_switch {
   local NVM_VERSION
   local NVM_RC_FILE=`nvm_find_nvmrc`
